@@ -3,7 +3,7 @@ Repository
 GitHub Repo
 Setup Instructions
 
-Clone the repository: git clone https://github.com/your-username/ai-agent-test.git
+Clone the repository: git clone https://github.com/your-username/ai_agent_test.git
 Install dependencies: pip install -r requirements.txt
 Create a .env file with GEMINI_API_KEY=your_api_key_here
 Ensure data/tax_policies.csv exists in the data folder
