@@ -1,22 +1,25 @@
 AI Agent Technical Test
+Repository
+GitHub Repo
 Setup Instructions
 
-Clone the repository.
-Install dependencies: pip install pandas python-dotenv google-generativeai.
-Create a .env file with GEMINI_API_KEY=your_api_key_here.
-Ensure data/tax_policies.csv exists with the provided dataset.
-Run the script: python main.py.
+Clone the repository: git clone https://github.com/your-username/ai-agent-test.git
+Install dependencies: pip install -r requirements.txt
+Create a .env file with GEMINI_API_KEY=your_api_key_here
+Ensure data/tax_policies.csv exists in the data folder
+Run: python3 main.py
 
 Approach Summary
 
-Input: CLI accepts natural language questions.
-Retrieval: Keyword-based search matches question keywords to dataset text.
-LLM: Gemini-1.5-flash generates answers using retrieved context.
-Data: CSV with tax policy information.
+Input: CLI for natural language questions
+Retrieval: Keyword-based search on CSV dataset
+LLM: gemini-2.0-flash-lite generates context-based answers
+Data: CSV with tax policy information
 
 Future Improvements
 
-Implement vector similarity search with sentence-transformers.
-Add multi-source dataset support.
-Include conversational memory for follow-up questions.
-Enhance error handling and logging.
+Use vector similarity search
+Support multi-source datasets
+Add conversational memory
+Improve error handling and logging and architecture sepparating the LLM code from the agent
+
